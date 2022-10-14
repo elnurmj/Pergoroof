@@ -1,0 +1,178 @@
+.sidebar {
+  width: 264px;
+  background-color: #74B3B4;
+  color: white;
+}
+
+.sidebar a {
+  color: #ffffff;
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.fa-sharp {
+  padding-left: 115px;
+}
+
+.logo {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.logo-white {
+  margin-right: 10px;
+  margin-left: 5px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 35%;
+}
+
+.navbar {
+  position: relative;
+}
+
+.navbar .search input {
+  width: 658px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #D6D6D6;
+  -webkit-box-shadow: 0px 0px 60px #d3d2d2;
+          box-shadow: 0px 0px 60px #d3d2d2;
+  padding-left: 50px;
+  opacity: 0.5;
+  outline: 1px solid gainsboro;
+}
+
+.navbar .fa-solid {
+  position: absolute;
+  top: 50;
+  left: 20px;
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+.icon-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.icon-window {
+  height: 48px;
+  width: 50px;
+  border: 1px solid #D6D6D6;
+  border-radius: 8px;
+  outline: 1px solid gainsboro;
+  -webkit-box-shadow: 0px 0px 10px #d3d2d2;
+          box-shadow: 0px 0px 10px #d3d2d2;
+  margin-left: 20px;
+}
+
+.icons {
+  font-size: 25px;
+  cursor: pointer;
+  padding-left: 100px;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: 1A1818 70, 68, 68;
+}
+
+.icons :hover {
+  color: gray;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.icons .space {
+  margin-left: 12px;
+  padding-top: 10px;
+}
+
+.icons .count {
+  position: relative;
+}
+
+.icons .count-color {
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  background-color: #FF7D7D;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.user {
+  padding-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.user .img .username {
+  width: 48px;
+  height: 48px;
+}
+
+.user .user-name {
+  padding-left: 10px;
+}
+
+.user .user-name h4 {
+  width: 150px;
+  height: 21px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  color: #1A1818;
+}
+
+.user .user-name h6 {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -ms-flex-positive: 0;
+      flex-grow: 0;
+  color: #B4B4B4;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  width: 170px;
+  height: 18px;
+}
+
+.user .arrow {
+  color: #1A1818;
+  width: 7px;
+  cursor: pointer;
+}
+
+.user .arrow :hover {
+  color: gray;
+}
+/*# sourceMappingURL=sales.css.map */
