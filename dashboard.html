@@ -11,6 +11,10 @@
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/dashboard.css">
     <title>Dashboard</title>
 </head>
@@ -20,21 +24,62 @@
         <div class="w3-sidebar w3-bar-block sidebar">
             <h3 class="w3-bar-item mb-5 logo mt-3"> <i class="fa-regular fa-square logo-white"></i>LOGO <i
                     class="fa-sharp fa-solid fa-map-pin"></i></h3>
-            <a href="dashboard.html" class="w3-bar-item w3-button"><i class="fa-solid fa-gauge m-2"></i>Dashboard</a>
-            <a href="projects.html" class="w3-bar-item w3-button"><i class="fa-solid fa-border-all m-2"></i>Projects</a>
-            <a href="clients.html" class="w3-bar-item w3-button"><i class="fa-solid fa-user-group m-2"></i>Clients</a>
-            <a href="services.html" class="w3-bar-item w3-button"><i class="fa-solid fa-gear m-2"></i>Services</a>
-            <a href="team.html" class="w3-bar-item w3-button"><i class="fa-brands fa-rocketchat m-2"></i>Team</a>
-            <a href="dealers.html" class="w3-bar-item w3-button"><i class="fa-solid fa-bag-shopping m-2"></i>Dealers</a>
-            <a href="products.html" class="w3-bar-item w3-button"><i class="fa-solid fa-paste m-2"></i>Products</a>
-            <a href="human-resources.html" class="w3-bar-item w3-button"><i class="fa-solid fa-user m-2"></i>Human resources</a>
-            <a href="monitoring.html" class="w3-bar-item w3-button"><i class="fa-solid fa-magnifying-glass m-2"></i>Monitoring</a>
-            <a href="sales.html" class="w3-bar-item w3-button"><i class="fa-solid fa-arrow-up-wide-short m-2"></i>Sales</a>
-            <a href="map.html" class="w3-bar-item w3-button"><i class="fa-solid fa-map m-2"></i>Map</a>
-            <a href="tools.html" class="w3-bar-item w3-button"><i class="fa-solid fa-screwdriver-wrench m-2"></i>Tools</a>
-            <a href="accounting.html" class="w3-bar-item w3-button"><i class="fa-solid fa-receipt m-2"></i>Accounting</a>
+            <div class="side-item">
+                <a href="dashboard.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/chart.svg"
+                            alt=""></i>Dashboard</a>
+            </div>
+            <div class="side-item">
+                <a href="projects.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/element-3.svg"
+                            alt=""></i>Projects</a>
+            </div>
+            <div class="side-item">
+                <a href="clients.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/profile-2user.svg"
+                            alt=""></i>Clients</a>
+            </div>
+            <div class="side-item">
+                <a href="services.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/setting-2.svg"
+                            alt=""></i>Services</a>
+            </div>
+            <div class="side-item">
+                <a href="team.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/chat.svg"
+                            alt=""></i>Team</a>
+            </div>
+            <div class="side-item">
+                <a href="dealers.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/people.svg"
+                            alt=""></i>Dealers</a>
+            </div>
+            <div class="side-item">
+                <a href="products.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/buildings-2.svg"
+                            alt=""></i>Products</a>
+            </div>
+            <div class="side-item">
+                <a href="human-resources.html" class="side-items"><i class="icon m-2"><img
+                            src="./assets/icon/Person.svg" alt=""></i>Human
+                    resources</a>
+            </div>
+            <div class="side-item">
+                <a href="monitoring.html" class="side-items"><i class="icon m-2"><img
+                            src="./assets/icon/search-status.svg" alt=""></i>Monitoring</a>
+            </div>
+            <div class="side-item">
+                <a href="sales.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/diagram.svg"
+                            alt=""></i>Sales</a>
+            </div>
+            <div class="side-item">
+                <a href="map.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/map.svg"
+                            alt=""></i>Map</a>
+            </div>
+            <div class="side-item">
+                <a href="tools.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/ruler&pen.svg"
+                            alt=""></i>Tools</a>
+            </div>
+            <div class="side-item">
+                <a href="accounting.html" class="side-items"><i class="icon m-2"><img
+                            src="./assets/icon/wallet-money.svg" alt=""></i>Accounting</a>
+            </div>
+
         </div>
-        <section>
+        <section class="topbar">
             <div class="container">
                 <div class="row">
                     <div class="col-6 mt-3">
@@ -48,18 +93,26 @@
                     <div class="col-6 icon-user mt-3">
                         <div class="icons">
                             <div class="icon-window">
-                                <i class="fa-brands fa-rocketchat space"></i>
-                            </div>
-                            <div class="icon-window">
-                                <i class="fa-solid fa-bell space count">
-                                    <div class="count-color">
-                                    </div>
-                                </i>
-                            </div>
-                            <div class="icon-window">
-                                <i class="fa-solid fa-suitcase space"></i>
-                            </div>
+                                <a href="#">
+                                    <i class="fa-brands fa-rocketchat space"></i>
+                                </a>
 
+                            </div>
+                            <div class="icon-window">
+                                <a href="#">
+                                    <i class="fa-solid fa-bell space count">
+                                        <div class="count-color">
+                                        </div>
+                                    </i>
+                                </a>
+
+                            </div>
+                            <div class="icon-window">
+                                <a href="#">
+                                    <i class="fa-solid fa-suitcase space"></i>
+                                </a>
+
+                            </div>
                         </div>
                         <div class="user">
                             <div class="img">
@@ -71,7 +124,9 @@
                                 <h6>hasanbasri@pergoroof.com</h6>
                             </div>
                             <div class="arrow">
-                                <i class="fa-solid fa-angle-down"></i>
+                                <a href="#">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -80,23 +135,29 @@
             </div>
 
         </section>
-       
+
     </header>
     <main>
         <section>
             <div class="container">
-                <div class="row mt-5 backg">
+                <div class="row mt-4 backg">
                     <div class="col-6 mt-2">
                         <span class="latest">Latest actions</span>
-                        <span class="see">see all</span>
-                        <i class="fa-solid fa-angle-right"></i>
+                        <a href="#">
+                            <span class="see">see all</span>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+
                     </div>
                     <div class="col-6">
-                        <div class="div-1">
-                            <i class="fa-solid fa-plus"></i>
-                            <span>
-                                Create new project
-                            </span>
+                        <div class="create-new">
+                            <a href="#">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>
+                                    Create new project
+                                </span>
+                            </a>
+
                         </div>
                     </div>
                     <div class="row mt-3">
@@ -117,7 +178,7 @@
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est ligula,
                                         scelerisque...</span>
                                 </div>
-                                <div class="btn btn-success">
+                                <div class="btn btn-success mt-4">
                                     <i class="fa-regular fa-clock"></i>
                                     24 avq 2022, 14:00
                                 </div>
@@ -157,7 +218,7 @@
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est ligula,
                                         scelerisque...</span>
                                 </div>
-                                <div class="btn btn-success">
+                                <div class="btn btn-success mt-4">
                                     <i class="fa-regular fa-clock"></i>
                                     12 okt 2022, 16:30
                                 </div>
@@ -197,7 +258,7 @@
                                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam est ligula,
                                         scelerisque...</span>
                                 </div>
-                                <div class="btn btn-success">
+                                <div class="btn btn-success mt-4">
                                     <i class="fa-regular fa-clock"></i>
                                     20 sen 2022, 15:00
                                 </div>

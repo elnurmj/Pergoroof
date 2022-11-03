@@ -1,3 +1,13 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .sidebar {
   width: 264px;
   background-color: #74B3B4;
@@ -10,9 +20,42 @@
   opacity: 0.5;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.side-items {
+  text-decoration: none;
+  width: 240px;
+}
+
+.side-item {
+  cursor: pointer;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 56px;
+  width: 240px;
+  padding: 16px;
+  margin-left: 10px;
+}
+
+.side-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+}
+
+.side-item:hover .side-items {
+  opacity: 1;
+}
+
+.topbar {
+  background-color: white;
+  height: 90px;
 }
 
 .fa-sharp {
@@ -138,11 +181,11 @@
 
 .user .user-name h4 {
   width: 150px;
-  height: 21px;
+  height: 16px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 21px;
   color: #1A1818;
 }
@@ -159,7 +202,7 @@
   color: #B4B4B4;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   width: 170px;
@@ -168,6 +211,7 @@
 
 .user .arrow {
   color: #1A1818;
+  margin-left: 40px;
   width: 7px;
   cursor: pointer;
 }
@@ -221,7 +265,7 @@
   font-size: 10px;
 }
 
-.div-1 {
+.create-new {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -231,7 +275,11 @@
   cursor: pointer;
 }
 
-.div-1 span {
+.create-new a {
+  text-decoration: none;
+}
+
+.create-new span {
   width: 116px;
   height: 20px;
   font-family: 'Poppins';
@@ -242,12 +290,12 @@
   color: #78ADFD;
 }
 
-.div-1 i {
+.create-new i {
   font-size: 14px;
   color: #78ADFD;
 }
 
-.div-1 :hover {
+.create-new :hover {
   color: gray;
 }
 
@@ -261,6 +309,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.backg a {
+  text-decoration: none;
 }
 
 .project-1 {
@@ -320,16 +372,16 @@
 .project-1 .users .fa-comments {
   position: absolute;
   top: 10px;
-  right: 160px;
+  right: 168px;
   color: #707070;
 }
 
 .project-1 .users .comment {
   position: absolute;
   top: 8px;
-  right: -10px;
+  right: -5px;
   color: #707070;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Poppins';
   font-style: normal;
 }
@@ -346,7 +398,7 @@
   top: 8px;
   right: -160px;
   color: #707070;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Poppins';
   font-style: normal;
 }
@@ -379,6 +431,10 @@
   margin-left: 10px;
   color: white;
   font-size: 14px;
+}
+
+.project-1 .btn-info:hover {
+  background-color: gray;
 }
 
 .project-1 h4 {
@@ -489,16 +545,16 @@
 .project-2 .users .fa-comments {
   position: absolute;
   top: 10px;
-  right: 160px;
+  right: 168px;
   color: #707070;
 }
 
 .project-2 .users .comment {
   position: absolute;
   top: 8px;
-  right: -10px;
+  right: -5px;
   color: #707070;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Poppins';
   font-style: normal;
 }
@@ -515,7 +571,7 @@
   top: 8px;
   right: -160px;
   color: #707070;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Poppins';
   font-style: normal;
 }
@@ -549,6 +605,10 @@
   margin-left: 10px;
 }
 
+.project-2 .btn-warning:hover {
+  background-color: gray;
+}
+
 .project-2 .btn-primary {
   background-color: #97C1FF;
   outline: none;
@@ -559,6 +619,10 @@
   padding: 2px 10px;
   margin-top: 15px;
   margin-left: 15px;
+}
+
+.project-2 .btn-primary:hover {
+  background-color: gray;
 }
 
 .project-2 h4 {
@@ -736,16 +800,16 @@
 .project-3 .users .fa-comments {
   position: absolute;
   top: 10px;
-  right: 160px;
+  right: 168px;
   color: #707070;
 }
 
 .project-3 .users .comment {
   position: absolute;
   top: 8px;
-  right: -10px;
+  right: -5px;
   color: #707070;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Poppins';
   font-style: normal;
 }
@@ -762,7 +826,7 @@
   top: 8px;
   right: -160px;
   color: #707070;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Poppins';
   font-style: normal;
 }
