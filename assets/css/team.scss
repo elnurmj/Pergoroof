@@ -1,5 +1,6 @@
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: #F7F7F7;
 }
 
 .sidebar{
@@ -66,6 +67,11 @@ body{
     border-radius: 35%;
 }
 
+
+.topbar{
+    background-color: white;
+    height: 90px;
+}
 
 .navbar{
     position: relative;
@@ -196,5 +202,13 @@ body{
             color: gray;
             
         }
+    }
+}
+
+
+@media (min-width: 2400px){
+    .custom-width{
+        margin-left: -290px;
+        width: 2055px;
     }
 }
