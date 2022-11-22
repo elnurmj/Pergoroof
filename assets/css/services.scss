@@ -102,7 +102,6 @@ body{
 
 .icon-user{
     display: flex;
-    width: 1027px;
     justify-content: right;
 }
 
@@ -327,7 +326,7 @@ body{
 
 .custom-width{
     margin-left: -90px;
-    width: 1555px;
+    width: 1750px;
 }
 
 .col-2{
@@ -501,9 +500,17 @@ body{
     }
 }
 
+
+
+
+
+
+
+
+
 @media (min-width: 2400px){
     .custom-width{
-        margin-left: -290px;
-        width: 2055px;
+        margin-left: -400px;
+        width: 2350px;
     }
 }

@@ -108,7 +108,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1027px;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -231,7 +230,7 @@ body {
 
 .custom-width {
   margin-left: -90px;
-  width: 1555px;
+  width: 1750px;
 }
 
 .clients {
@@ -336,10 +335,6 @@ body {
   position: absolute;
   top: 9px;
   right: 17px;
-}
-
-.name-cust {
-  margin-right: 500px;
 }
 
 .custom-height {
@@ -447,8 +442,11 @@ body {
 
 @media (min-width: 2400px) {
   .custom-width {
-    margin-left: -290px;
-    width: 2055px;
+    margin-left: -400px;
+    width: 2350px;
+  }
+  .name-cust {
+    margin-right: 500px;
   }
 }
 /*# sourceMappingURL=clients.css.map */

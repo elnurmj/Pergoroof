@@ -252,3 +252,21 @@ body{
     }
 }
 
+
+.custom-width{
+    margin-left: -90px;
+    width: 1750px;
+}
+
+
+@media (min-width: 2400px){
+    .custom-width{
+        margin-left: -400px;
+        width: 2350px;
+    }
+
+    .name-cust{
+         margin-right: 500px;
+    }
+    
+}
