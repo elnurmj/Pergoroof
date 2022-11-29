@@ -283,7 +283,7 @@ color: #78ADFD;
 
 .backg{
     background-color: #FFFFFF;
-    box-shadow: 0px 0px 5px #d3d2d2;
+    box-shadow: 0px 0px 1px #d3d2d2;
     justify-content: center;
     align-items: center;
 
@@ -404,6 +404,7 @@ color: #78ADFD;
     margin-left: 10px;
     color: white;
     font-size: 14px;
+    
         
     }
 
@@ -790,15 +791,10 @@ color: #78ADFD;
     background-color: #FF9F9F;
     outline: none;
     border: none;
-    width: 52px;
-    height: 26px;
+    width: 81px;
+    height: 29px;
     border-radius: 30px;
     padding: 2px 10px;
-    margin-top: 15px;
-    margin-left: 15px;
-
-    
-    
 }
 	
 .dots{
@@ -818,6 +814,7 @@ color: #78ADFD;
 
 .title{
     height: 41px;
+    justify-content: space-between;
     background: #38A8A8;
     color: white;
     font-family: 'Poppins';
@@ -849,7 +846,7 @@ font-size: 15px;
 line-height: 20px;
 color: #545454;
 position: relative;
-
+justify-content: space-between;
 .low{
     height: 10px;
     width: 10px;
@@ -899,8 +896,9 @@ position: relative;
 .fa-ellipsis{
     position: absolute;
     top: 0;
-    right: -130px;
+    right: 20px;
     cursor: pointer;
+    color: black;
 }
 
 
@@ -909,6 +907,216 @@ position: relative;
     width: 1750px;
 }
 
+
+
+.overview{
+    color: #1A1818;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+
+.mnth{
+    color:#707070;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+
+
+.d-w-m{
+    text-align: right;
+    font-size: 14px;
+    font-size: 600;
+    span{
+        color: #B4B4B4;
+    }
+
+    .brdr-bottom{
+        color: #38A8A8;
+        border-bottom: 1px solid #38A8A8;
+    }
+}
+
+.in-progress{
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: #4674B9;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.done{
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #73BEBF;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+}
+
+.in-progress-text{
+    position: absolute;
+    top: 18px;
+    left: 35px;
+    color: #1A1818;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.done-text{
+    position: absolute;
+    top: 18px;
+    left: 175px;
+    color: #1A1818;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.graph{
+    position: relative;
+
+    img{
+        width: 100%;
+    }
+}
+
+
+.custom-opa{
+    color: #B4B4B4;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.black{
+    color: #1A1818;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.clients-city{
+margin-left: 10px;
+margin-top: 20px;
+font-weight: 700;
+font-size: 16px;
+color: #1A1818;
+}
+
+.cal{
+    margin-top: 30px;
+    margin-left: 20px;
+    h6{
+    color: #1A1818;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    }
+
+    .flt-right{
+        margin-left: 68px;
+    }
+}
+
+.was{
+    margin-top: 15px;
+    margin-left: 20px;
+    h6{
+    color: #1A1818;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    }
+
+    .flt-right{
+        margin-left: 50px;
+    }
+}
+
+.flo{
+    margin-top: 15px;
+    margin-left: 20px;
+    h6{
+    color: #1A1818;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    }
+
+    .flt-right{
+        margin-left: 82px;
+    }
+}
+
+.tex{
+    margin-top: 15px;
+    margin-left: 20px;
+    h6{
+    color: #1A1818;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    }
+
+    .flt-right{
+        margin-left: 93px;
+    }
+}
+
+.vir{
+    margin-top: 15px;
+    margin-left: 20px;
+    h6{
+    color: #1A1818;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 10px;
+    }
+
+    .flt-right{
+        margin-left: 80px;
+    }
+}
+
+
+.pie{
+    img{
+        margin-top: 10%;
+    }
+}
+
+.sales-rate{
+    div{
+        color: #1A1818;
+        font-size: 17px;
+        font-weight: 500;
+        margin-top: 25px;
+        span{
+            float: right;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+.column-1{
+    width: 802px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.column-2{
+    width: 898px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+}
 
 @media (min-width: 2400px){
     .custom-width{
