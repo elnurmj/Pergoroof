@@ -3,11 +3,6 @@ body {
   background-color: #F7F7F7;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .sidebar {
   width: 264px;
   background-color: #60AAAB;
@@ -108,6 +103,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 
 .icon-window {
@@ -162,6 +160,15 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+
+.icons .count-color span {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #fff;
 }
 
 .user {
@@ -1260,8 +1267,30 @@ span {
     margin-left: -400px;
     width: 2350px;
   }
-  .name-cust {
-    margin-right: 500px;
+  .custom-col-1 {
+    width: 1700px;
+    border-radius: 10px;
+  }
+  .custom-col-2 {
+    width: 620px;
+    margin-left: 30px;
+    border-radius: 10px;
+  }
+  .column-1 {
+    width: 1700px;
+    border-radius: 10px;
+  }
+  .column-2 {
+    width: 620px;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  .pie {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 80px;
   }
 }
 /*# sourceMappingURL=dashboard.css.map */

@@ -3,9 +3,6 @@ body{
     background-color: #F7F7F7;
 }
 
-*{
-    box-sizing: border-box;
-}
 
 .sidebar{
     width: 264px;
@@ -107,6 +104,7 @@ body{
 
 .icon-user{
     display: flex;
+    justify-content: right;
 }
 
 .icon-window{
@@ -149,6 +147,14 @@ body{
         width: 20px;
         height: 20px;
         border-radius: 50%;
+        span{
+            position: absolute;
+            top: 6px;
+            left: 7px;
+            font-size: 9px;
+            font-weight: 400;
+            color: #fff;
+        }
     }
 }
 
@@ -1219,9 +1225,32 @@ color: #1A1818;
         width: 2350px;
     }
 
-    .name-cust{
-         margin-right: 500px;
+    .custom-col-1{
+        width: 1700px;
+        border-radius: 10px;
     }
     
+    .custom-col-2{
+        width: 620px;
+        margin-left: 30px;
+        border-radius: 10px;
+    }
+
+    .column-1{
+        width: 1700px;
+        border-radius: 10px;
+    }
+
+    .column-2{
+        width: 620px;
+        border-radius: 10px;
+        margin-left: 30px;
+    }
+
+    .pie{
+        text-align: center;
+        align-items: center;
+        padding-bottom: 80px;
+    }
 }
 
