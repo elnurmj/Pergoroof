@@ -286,6 +286,33 @@ body {
   outline: none;
 }
 
+.input-text input {
+  width: 340px;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 10px;
+  outline: none;
+  border: none;
+}
+
+.icon-input-text {
+  width: 360px;
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid #D6D6D6;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.icon-input-text input {
+  width: 310px;
+  height: 40px;
+  margin-top: 7px;
+  margin-left: 40px;
+  outline: none;
+  border: none;
+}
+
 .project-name ::-webkit-input-placeholder {
   padding-left: 15px;
   color: #D6D6D6;
@@ -427,28 +454,28 @@ body {
 }
 
 .icon-inputs ::-webkit-input-placeholder {
-  padding-left: 45px;
+  padding-left: 15px;
   color: #D6D6D6;
   font-size: 16px;
   font-weight: 400;
 }
 
 .icon-inputs :-ms-input-placeholder {
-  padding-left: 45px;
+  padding-left: 15px;
   color: #D6D6D6;
   font-size: 16px;
   font-weight: 400;
 }
 
 .icon-inputs ::-ms-input-placeholder {
-  padding-left: 45px;
+  padding-left: 15px;
   color: #D6D6D6;
   font-size: 16px;
   font-weight: 400;
 }
 
 .icon-inputs ::placeholder {
-  padding-left: 45px;
+  padding-left: 15px;
   color: #D6D6D6;
   font-size: 16px;
   font-weight: 400;

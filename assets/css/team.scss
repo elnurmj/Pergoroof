@@ -3,6 +3,22 @@ body{
     background-color: #F7F7F7;
 }
 
+.custom-width{
+    margin-left: -90px;
+    width: 1750px;
+}
+
+.backg{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 1px #d3d2d2;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        text-decoration: none;
+    }
+}
+
 .sidebar{
     width: 264px;
     background-color: #60AAAB;    ;
@@ -103,6 +119,7 @@ body{
 
 .icon-user{
     display: flex;
+    justify-content: right;
 }
 
 .icon-window{
@@ -205,6 +222,123 @@ body{
     }
 }
 
+.tm{
+
+    .team{
+        color: #1A1818;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 32px;
+    }
+
+    .team-count{
+        color: #B4B4B4;
+        font-size: 18px;
+    }
+
+    h6{
+        color:#707070;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .home{
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        color: #D6D6D6
+    }
+
+    span{
+        font-size: 12px;
+        font-weight: 400;
+        color: #707070;
+    }
+}
+
+
+.selectors{
+    #projects{
+        width: 200px;
+        height: 48px;
+        border: 1px solid #D6D6D6;
+        border-radius: 10px;
+        background-color: #ffffff;
+        outline: none;
+    }
+
+
+    #location{
+        width: 200px;
+        height: 48px;
+        border: 1px solid #D6D6D6;
+        border-radius: 10px;
+        background-color: #ffffff;
+        outline: none;
+        margin-left: 20px;
+    }
+
+    #position{
+        width: 200px;
+        height: 48px;
+        border: 1px solid #D6D6D6;
+        border-radius: 10px;
+        background-color: #ffffff;
+        outline: none;
+        margin-left: 20px;
+    }
+}
+
+
+
+.title{
+    height: 41px;
+    justify-content: space-between;
+    background: #38A8A8;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.info{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #545454;
+    position: relative;
+    justify-content: space-between;
+    .low{
+        height: 10px;
+        width: 10px;
+        background-color: #5FDCB3;
+        border-radius: 50%;
+        position: relative;
+    
+        span{
+            position: absolute;
+            top: -5px;
+            left: 20px;
+            color: #1A1818;
+        }
+    }
+}
+
+.fa-ellipsis{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    color: black;
+}
 
 @media (min-width: 2400px){
     .custom-width{

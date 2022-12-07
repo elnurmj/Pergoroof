@@ -433,14 +433,10 @@ body {
   border-radius: 50%;
 }
 
-.users span {
-  position: absolute;
-  top: 6px;
-  left: 85px;
-  text-align: center;
-}
-
 .users .count {
+  position: relative;
+  top: 6px;
+  left: 80px;
   width: 28px;
   height: 28px;
   border-radius: 50%;
