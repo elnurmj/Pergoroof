@@ -518,6 +518,10 @@ body {
   margin-left: 10px;
 }
 
+.accs img {
+  cursor: pointer;
+}
+
 .accsesroies {
   color: #38A8A8;
   font-weight: 400;
@@ -530,10 +534,18 @@ body {
   font-size: 14px;
 }
 
+.products img {
+  cursor: pointer;
+}
+
 .props {
   color: #38A8A8;
   font-weight: 400;
   font-size: 14px;
+}
+
+.props img {
+  cursor: pointer;
 }
 
 .tags button {

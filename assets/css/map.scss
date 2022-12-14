@@ -489,22 +489,36 @@ body{
     }
 }
 
+.accs{
+    img{
+        cursor: pointer;
+    }
+}
+
 .accsesroies{
     color: #38A8A8;
     font-weight: 400;
     font-size: 14px;
+    
 }
 
 .products{
     color: #38A8A8;
     font-weight: 400;
     font-size: 14px;
+    img{
+        cursor: pointer;
+    }
 }
 
 .props{
     color: #38A8A8;
     font-weight: 400;
     font-size: 14px;
+
+    img{
+        cursor: pointer;
+    }
 }
 
 .tags{
