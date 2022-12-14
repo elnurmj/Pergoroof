@@ -1293,4 +1293,31 @@ span {
     padding-bottom: 80px;
   }
 }
+
+@media (max-width: 1440px) {
+  .custom-width {
+    margin-left: 40px;
+    width: 1390px;
+  }
+  .column-1 {
+    width: 600px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  .column-2 {
+    width: 700px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+  .custom-col-1 {
+    width: 90px;
+    border-radius: 10px;
+  }
+  .custom-col-2 {
+    width: 190px;
+    margin-left: 40px;
+    border-radius: 10px;
+  }
+}
 /*# sourceMappingURL=dashboard.css.map */

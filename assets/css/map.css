@@ -572,4 +572,11 @@ body {
     width: 2350px;
   }
 }
+
+@media (max-width: 1440px) {
+  .custom-width {
+    margin-left: 40px;
+    width: 1400px;
+  }
+}
 /*# sourceMappingURL=map.css.map */
