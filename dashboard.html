@@ -21,7 +21,8 @@
 
 <body>
     <header>
-        <div class="w3-sidebar w3-bar-block sidebar">
+        <div class="w3-sidebar w3-bar-block sidebar" id="mySidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 30px; float: right; text-decoration: none; color: white; font-weight: 500; margin-right: 20px;">x</a>
             <h3 class="w3-bar-item mb-5 logo mt-3"> <i><img src="./assets/icon/Png Slogansız.png" alt=""
                         class="logo-class"></i>
             </h3>
@@ -84,7 +85,7 @@
             <div class="container">
                 <div class="row custom-width">
                     <div class="col-6 mt-3">
-                        <div class="navbar">
+                        <div class="navbar" id="main">
                             <div class="search">
                                 <input type="text" placeholder="search..">
                             </div>
@@ -141,8 +142,9 @@
     <main>
         <section>
             <div class="container">
-                <div class="row mt-4 custom-width">
+                <div class="row mt-4 custom-width" id="main">
                     <div class="custom-col-1 backg mt-2">
+                        <button class="openbtn" onclick="openNav()" style="float: left; margin-left: -100px; width: 50px; color: white; background-color: #38A8A8; border: none; border-radius: 10px;">☰</button>
                         <span class="latest">Latest projects</span>
                         <a href="#">
                             <span class="see">see all</span>
@@ -430,7 +432,7 @@
                         </div>
                     </div>
 
-                    <div class="custom-col-2 backg mt-2" style="text-align: center;">
+                    <div class="custom-col-2 backg mt-2 calendar-img" style="text-align: center;">
                         <img src="./assets/img/calendar.svg" alt="">
                     </div>
 
