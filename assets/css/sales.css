@@ -25,7 +25,7 @@ body {
 }
 
 .custom-col-2 {
-  width: 500px;
+  width: 415px;
   margin-left: 30px;
   border-radius: 10px;
 }
@@ -36,13 +36,13 @@ body {
 }
 
 .custom-col-4 {
-  width: 700px;
+  width: 615px;
   margin-left: 30px;
   border-radius: 10px;
 }
 
 .custom-col-5 {
-  width: 700px;
+  width: 615px;
   border-radius: 10px;
 }
 
@@ -273,8 +273,7 @@ body {
 }
 
 .custom-width {
-  margin-left: -90px;
-  width: 1750px;
+  width: 1550px;
 }
 
 .topbar {

@@ -7,6 +7,9 @@ body{
     width: 264px;
     background-color: #60AAAB;    ;
     color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1;
 
     a{
         color: #ffffff;
@@ -19,6 +22,21 @@ body{
             width: 100%;
             height: 100%;
         }
+    }
+
+    .closebtn{
+        opacity: 0.5;
+        font-size: 30px;
+        font-weight: 500;
+        float: right;
+        text-decoration: none;
+        color: white;
+        margin-right: 20px;
+    }
+
+    .closebtn:hover{
+        opacity: 1;
+        transition: all 0.5s;
     }
 }
 
@@ -70,6 +88,28 @@ body{
 .topbar{
     background-color: white;
     height: 90px;
+
+    .openbtn{
+        opacity: 0.5;
+        float: left;
+        margin-top: 20px;
+        margin-left: 10px;
+        height: 50px;
+        width: 50px;
+        font-size: 30px;
+        opacity: 1;
+        color: #38A8A8;
+        background-color: white;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .openbtn:hover{
+        background-color: #38A8A8;
+        color: white;
+        opacity: 1;
+        transition: all 0.5s;
+    }
 }
 
 .navbar{
@@ -254,8 +294,7 @@ body{
 
 
 .custom-width{
-    margin-left: -90px;
-    width: 1750px;
+    width: 1550px;
 }
 
 

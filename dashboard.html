@@ -22,7 +22,7 @@
 <body>
     <header>
         <div class="w3-sidebar w3-bar-block sidebar" id="mySidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="font-size: 30px; float: right; text-decoration: none; color: white; font-weight: 500; margin-right: 20px;">x</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
             <h3 class="w3-bar-item mb-5 logo mt-3"> <i><img src="./assets/icon/Png Slogansız.png" alt=""
                         class="logo-class"></i>
             </h3>
@@ -81,11 +81,12 @@
             </div>
 
         </div>
-        <section class="topbar">
+        <section class="topbar" id="main">
+            <button class="openbtn" onclick="openNav()" >☰</button>
             <div class="container">
-                <div class="row custom-width">
+                <div class="row custom-width" id="main">
                     <div class="col-6 mt-3">
-                        <div class="navbar" id="main">
+                        <div class="navbar">
                             <div class="search">
                                 <input type="text" placeholder="search..">
                             </div>
@@ -142,9 +143,8 @@
     <main>
         <section>
             <div class="container">
-                <div class="row mt-4 custom-width" id="main">
+                <div class="row mt-4 custom-width">
                     <div class="custom-col-1 backg mt-2">
-                        <button class="openbtn" onclick="openNav()" style="float: left; margin-left: -100px; width: 50px; color: white; background-color: #38A8A8; border: none; border-radius: 10px;">☰</button>
                         <span class="latest">Latest projects</span>
                         <a href="#">
                             <span class="see">see all</span>
