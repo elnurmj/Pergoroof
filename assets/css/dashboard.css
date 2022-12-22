@@ -973,6 +973,7 @@ body {
 
 .custom-width {
   width: 1550px;
+  margin-left: -100px;
 }
 
 .overview {
@@ -1306,11 +1307,11 @@ span {
 
 @media (min-width: 2400px) {
   .custom-width {
-    margin-left: -400px;
-    width: 2350px;
+    margin-left: -300px;
+    width: 2150px;
   }
   .custom-col-1 {
-    width: 1700px;
+    width: 1500px;
     border-radius: 10px;
   }
   .custom-col-2 {
@@ -1319,7 +1320,7 @@ span {
     border-radius: 10px;
   }
   .column-1 {
-    width: 1700px;
+    width: 1500px;
     border-radius: 10px;
   }
   .column-2 {

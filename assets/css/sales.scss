@@ -636,7 +636,27 @@ body{
 
 @media (min-width: 2400px){
     .custom-width{
-        margin-left: -400px;
-        width: 2350px;
+        margin-left: -300px;
+        width: 2150px;
+    }
+
+    .custom-col-1{
+        width: 1500px;
+    }
+    .custom-col-2{
+        width: 600px;
+    }
+    .custom-col-3{
+        width: 1300px;
+    }
+    .custom-col-4{
+        width: 800px;
+    }
+    .custom-col-5{
+        width: 700px;
+    }
+
+    .custom-col-6{
+        width: 1400px;
     }
 } 
