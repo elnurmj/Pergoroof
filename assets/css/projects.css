@@ -4,6 +4,7 @@ body {
 }
 
 .sidebar {
+  display: none;
   width: 264px;
   background-color: #60AAAB;
   color: white;
@@ -98,6 +99,8 @@ body {
 .topbar {
   background-color: white;
   height: 90px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .topbar .openbtn {
@@ -312,6 +315,7 @@ body {
 
 .custom-width {
   width: 1550px;
+  margin-left: -130px;
 }
 
 @media (min-width: 2400px) {

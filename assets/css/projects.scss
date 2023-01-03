@@ -4,6 +4,7 @@ body{
 }
 
 .sidebar{
+    display: none;
     width: 264px;
     background-color: #60AAAB;    ;
     color: white;
@@ -88,6 +89,7 @@ body{
 .topbar{
     background-color: white;
     height: 90px;
+    transition: 0.5s;
 
     .openbtn{
         opacity: 0.5;
@@ -295,6 +297,7 @@ body{
 
 .custom-width{
     width: 1550px;
+    margin-left: -130px;
 }
 
 

@@ -82,6 +82,7 @@ body{
 .topbar{
     background-color: white;
     height: 90px;
+    transition: 0.5s;
 
    /*/ #toggle{
         border-radius: 50%;
@@ -95,7 +96,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+    }     
     
     #toggle::before{
         content: '';
