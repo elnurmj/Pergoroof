@@ -71,6 +71,9 @@ body{
  border-radius: 8px;
 }
 
+#main{
+    transition: 0.5s;
+}
 .side-item:hover .side-items{
  opacity: 1;
 }

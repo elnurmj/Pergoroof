@@ -21,10 +21,12 @@
 
 <body>
     <header>
-        <div class="w3-sidebar w3-bar-block sidebar">
+        <div class="w3-sidebar w3-bar-block sidebar" id="mySidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
             <h3 class="w3-bar-item mb-5 logo mt-3"> <i><img src="./assets/icon/Png Slogansız.png" alt=""
                         class="logo-class"></i>
             </h3>
+            <div class="bottom-border"></div>
             <div class="side-item">
                 <a href="dashboard.html" class="side-items"><i class="icon m-2"><img src="./assets/icon/chart.svg"
                             alt=""></i>Dashboard</a>
@@ -80,7 +82,8 @@
             </div>
 
         </div>
-        <section class="topbar">
+        <section class="topbar" id="navbar">
+            <button class="openbtn" onclick="openNav()" id="openbtn">☰</button>
             <div class="container">
                 <div class="row custom-width">
                     <div class="col-6 mt-3">
@@ -138,7 +141,7 @@
         </section>
 
     </header>
-    <main>
+    <main id="main">
         <section style="background-color: white; height: 200px;">
             <div class="container">
                 <div class="row custom-width">
@@ -334,6 +337,8 @@
     <footer>
 
     </footer>
+
+    <script src="./assets/js/new-project.js"></script>
 </body>
 
 </html>

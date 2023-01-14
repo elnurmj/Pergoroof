@@ -12,6 +12,13 @@ body{
     transition: 0.5s;
     z-index: 1;
 
+    .bottom-border{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.829);
+        margin-bottom: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
     a{
         color: #ffffff;
         margin-top: 5px;
@@ -116,7 +123,7 @@ body{
     background-color: white;
     height: 90px;
     transition: 0.5s;
-    
+
     .openbtn{
         opacity: 0.5;
         float: left;
@@ -253,7 +260,9 @@ body{
     margin-left: -130px;
 }
 
-
+#main{
+    transition: 0.5s;
+}
 .clients{
     color: #1A1818;
     font-weight: 600;
@@ -472,16 +481,10 @@ body{
 
 
 
-
 @media (min-width: 2400px){
     .custom-width{
-        margin-left: -300px;
+        margin-left: -400px;
         width: 2150px;
     }
 
-    .name-cust{
-         margin-right: 500px;
-    }
-    
 }
-
