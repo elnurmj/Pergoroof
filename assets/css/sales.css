@@ -302,6 +302,7 @@ body {
 
 .custom-width {
   width: 1550px;
+  margin-left: -130px;
 }
 
 #main {

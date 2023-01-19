@@ -286,6 +286,11 @@ body {
   margin-left: -130px;
 }
 
+#main {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .clients {
   color: #1A1818;
   font-weight: 600;
