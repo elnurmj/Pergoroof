@@ -1363,6 +1363,15 @@ span {
   color: #fff;
 }
 
+::-webkit-scrollbar {
+  background-color: #F7F7F7;
+  width: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 100%;
+}
+
 @media (min-width: 2400px) {
   .custom-width {
     margin-left: -400px;
