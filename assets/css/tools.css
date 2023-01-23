@@ -1,11 +1,24 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
 }
 
 .sidebar {
+  display: none;
   width: 264px;
   background-color: #60AAAB;
   color: white;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.sidebar .bottom-border {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.829);
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .sidebar a {
@@ -17,6 +30,22 @@ body {
 .sidebar i .logo-class {
   width: 100%;
   height: 100%;
+}
+
+.sidebar .closebtn {
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: 500;
+  float: right;
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+.sidebar .closebtn:hover {
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .side-items {
@@ -72,6 +101,36 @@ body {
   font-size: 20px;
   background-color: white;
   border-radius: 35%;
+}
+
+.topbar {
+  background-color: white;
+  height: 90px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.topbar .openbtn {
+  opacity: 0.5;
+  float: left;
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  opacity: 1;
+  color: #38A8A8;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+}
+
+.topbar .openbtn:hover {
+  background-color: #38A8A8;
+  color: white;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .navbar {
@@ -219,6 +278,16 @@ body {
   color: gray;
 }
 
+.custom-width {
+  width: 1550px;
+  margin-left: -130px;
+}
+
+#main {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 ::-webkit-scrollbar {
   background-color: #F7F7F7;
   width: 1px;
@@ -226,5 +295,15 @@ body {
 
 ::-webkit-scrollbar-thumb {
   height: 100%;
+}
+
+@media (min-width: 2400px) {
+  .custom-width {
+    margin-left: -400px;
+    width: 2150px;
+  }
+  .name-cust {
+    margin-right: 500px;
+  }
 }
 /*# sourceMappingURL=tools.css.map */
