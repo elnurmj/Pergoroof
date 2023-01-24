@@ -1262,13 +1262,20 @@ color: #1A1818;
         .count{
             text-align: center;
             position: absolute;
+            color: #545454;
             top: 5px;
             left:85px;
+            font-size: 12px;
             width: 28px;
             height: 28px;
             border-radius: 50%;
             background-color: #FFF8E7;
 
+            span{
+                position: absolute;
+                right: 8px;
+                top: 5px;
+            }
 
         }
 
@@ -1307,7 +1314,7 @@ color: #1A1818;
     span{
         position: absolute;
         top: 6px;
-        left: 10px;
+        left: 11px;
         font-size: 14px;
         font-weight: 600;
         color: #fff;

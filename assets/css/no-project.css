@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  background-color: #F7F7F7;
 }
 
 .sidebar {
@@ -104,7 +104,7 @@ body {
 }
 
 .topbar {
-  border-bottom: 1px solid #EFEFEF;
+  background-color: white;
   height: 90px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -278,6 +278,48 @@ body {
   color: gray;
 }
 
+.project {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 200px;
+}
+
+.project h3 {
+  color: #1A1818;
+  height: 32px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 50px;
+}
+
+.project p {
+  color: #999999;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.project .green-button {
+  background: #38A8A8;
+  border-radius: 10px;
+  width: 153px;
+  height: 48px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 15px;
+  border: none;
+}
+
+.project .green-button:hover {
+  background-color: #74B3B4;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .custom-width {
   width: 1550px;
   margin-left: -130px;
@@ -297,283 +339,6 @@ body {
   height: 100%;
 }
 
-.prjct .create-project {
-  color: #1A1818;
-  font-weight: 600;
-  font-size: 19px;
-  line-height: 32px;
-}
-
-.prjct .home {
-  display: block;
-  font-size: 12px;
-  font-weight: 400;
-  color: #D6D6D6;
-}
-
-.prjct span {
-  font-size: 12px;
-  font-weight: 400;
-  color: #707070;
-}
-
-.prjct .project-count {
-  color: #707070;
-  font-size: 18px;
-}
-
-.white-button {
-  width: 178px;
-  height: 48px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 24px;
-  border: 1px solid #EFEFEF;
-  background-color: #ffffff;
-  border-radius: 10px;
-  letter-spacing: -0.01em;
-  color: #60AAAB;
-  margin-left: 30px;
-}
-
-.white-button:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  opacity: 0.5;
-}
-
-.green-button {
-  background: #38A8A8;
-  border-radius: 10px;
-  width: 153px;
-  height: 48px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 15px;
-  border: none;
-  margin-left: 16px;
-}
-
-.green-button:hover {
-  background-color: #74B3B4;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.filter-button {
-  background: #38A8A8;
-  border-radius: 10px;
-  width: 94px;
-  height: 48px;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 15px;
-  border: none;
-  margin-left: 16px;
-}
-
-.filter-button:hover {
-  background-color: #74B3B4;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-a {
-  text-decoration: none;
-}
-
-.title {
-  background-color: #38A8A8;
-  height: 41px;
-  color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-input {
-  background: #FFFFFF;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #D6D6D6;
-  border-radius: 4px;
-  -webkit-appearance: none;
-}
-
-.loovroof {
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 21px;
-  color: #1A1818;
-  margin-left: 15px;
-}
-
-.project-type {
-  text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 32px;
-  height: 32px;
-  border-radius: 50px;
-  background: #38A8A8;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: white;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-}
-
-.btn-green {
-  width: 187px;
-  height: 36px;
-  background: #F6FFFF;
-  color: #74B3B4;
-  border-radius: 30px;
-  border: none;
-  font-weight: 600;
-  font-size: 15px;
-  margin-right: 50px;
-}
-
-.btn-info {
-  background-color: #8BE6FF;
-  outline: none;
-  border: none;
-  width: 81px;
-  height: 29px;
-  border-radius: 30px;
-  padding: 2px 10px;
-  margin-left: 10px;
-  color: white;
-  font-size: 14px;
-}
-
-.btn-info:hover {
-  color: #fff;
-  background-color: #5baac0;
-  border-color: #8bd1ff;
-}
-
-.btn-danger {
-  color: #FF9F9F;
-  background: #FFF6F6;
-  outline: none;
-  border: none;
-  width: 81px;
-  height: 29px;
-  border-radius: 30px;
-  padding: 2px 10px;
-}
-
-.users {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: -35px;
-}
-
-.users .img-1 {
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-}
-
-.users .img-2 {
-  position: absolute;
-  top: 0px;
-  left: 40px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-}
-
-.users .img-3 {
-  position: absolute;
-  top: 0px;
-  left: 60px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-}
-
-.users .count {
-  font-size: 12px;
-  color: #545454;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 0px;
-  left: 85px;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: #FFF8E7;
-}
-
-.messages {
-  color: #707070;
-  margin-left: 15px;
-  font-size: 15px;
-}
-
-.location {
-  margin-left: 125px;
-  color: #545454;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.cls {
-  margin-left: 240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  opacity: 0.5;
-  border: 1.5px solid #D6D6D6;
-  font-size: 16px;
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;
-  color: gainsboro;
-  cursor: pointer;
-}
-
-.cls:hover {
-  color: #545454;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  background-color: #EFEFEF;
-}
-
 @media (min-width: 2400px) {
   .custom-width {
     margin-left: -400px;
@@ -583,4 +348,4 @@ input {
     margin-right: 500px;
   }
 }
-/*# sourceMappingURL=projects.css.map */
+/*# sourceMappingURL=no-project.css.map */

@@ -1314,12 +1314,20 @@ body {
 .users .count {
   text-align: center;
   position: absolute;
+  color: #545454;
   top: 5px;
   left: 85px;
+  font-size: 12px;
   width: 28px;
   height: 28px;
   border-radius: 50%;
   background-color: #FFF8E7;
+}
+
+.users .count span {
+  position: absolute;
+  right: 8px;
+  top: 5px;
 }
 
 .users .three-dots cur
@@ -1357,7 +1365,7 @@ span {
 .c span {
   position: absolute;
   top: 6px;
-  left: 10px;
+  left: 11px;
   font-size: 14px;
   font-weight: 600;
   color: #fff;
