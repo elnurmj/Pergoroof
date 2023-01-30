@@ -12,3 +12,12 @@ function closeNav() {
   document.getElementById("navbar").style.marginLeft = "0";
   document.getElementById("openbtn").style.display = "block";
 }
+
+function closeFilter() {
+  document.getElementById("filter").style.display = "none";
+}
+
+
+
+
+
