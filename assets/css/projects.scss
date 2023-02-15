@@ -391,6 +391,8 @@ body{
     transition: 0.3s;
 }
 
+
+
 .filter-button{
     background: #38A8A8;
     border-radius: 10px;
@@ -401,38 +403,29 @@ body{
     font-size: 15px;
     border: none;
     margin-left: 16px;
-
+    cursor: pointer;
 }
 
-.filter-button:hover{
-    .filter{
-        display: block;
-       
-    }
-}
 
 .filter-button:hover{
     background-color: #74B3B4;
     transition: 0.3s;
-    cursor: default;
 }
 
-a{
-    text-decoration: none;
-}
 
 
 .filter{
-    margin-top: -110px;
+    margin-top: -140px;
     left: 1400px;
-    display: none;
+    position: absolute;
+    visibility: hidden;
     height: 1800px;
     width: 480px;
     background-color: gray;
     z-index: 1;
-    position: absolute;
     box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.05);
     background-color: #ffffff;
+   
     
     
     .filters{
@@ -459,8 +452,17 @@ a{
             font-size: 18px;
         }
         
+        
     }
      
+}
+
+.open-filter{
+    visibility: visible;
+}
+
+a{
+    text-decoration: none;
 }
 
 .add-product{
