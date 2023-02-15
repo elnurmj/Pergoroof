@@ -156,14 +156,290 @@
         <section class="backg" style="height: 90px;">
             <div class="container">
                 <div class="row custom-width">
-                    <div class="col-6 sls">
+                    <div class="col-6 sls mt-3">
                         <span class="sales">Sales</span>
                         <span class="home">Home / <span>Sales</span></span>
                     </div>
                     <div class="col-6 config mt-3">
                         <a href="#">
-                            <button class="filter-button"><img src="./assets/icon/dislike.svg" alt=""> Filter</button>
+                            <button class="white-button me-2">
+                                <i><img src="./assets/icon/green-chart.svg" alt=""></i>
+                                Show istatistics
+                            </button>
                         </a>
+                        <button class="filter-button">
+                            <div class="filter" id="filter" style="box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.05);">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="filters d-flex">
+                                            <h6
+                                                style="color: #333333; font-size: 24px; line-height: 32px; font-weight: 500;">
+                                                Filters</h6>
+                                            <i style="margin-top: 15px; cursor: pointer;" onclick="closeFilter()"><img
+                                                    src="./assets/icon/add1.svg" alt=""></i>
+                                        </div>
+                                        <div class="search">
+                                            <input type="text">
+                                            <i><img src="./assets/icon/Magnifiers.svg" alt=""></i>
+                                        </div>
+                                        <div class="col-6 mt-3 justify-content-left d-flex">
+                                            <span
+                                                style="color: #707070; font-size: 12px; font-weight: 400; line-height: 16px;">Request
+                                                date</span>
+                                        </div>
+                                        <div class="col-6 mt-3  d-flex">
+                                            <span
+                                                style="color: #707070; font-size: 12px; font-weight: 400; line-height: 16px;">Due
+                                                date</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="date"
+                                                style="width: 208px; height: 56px; border: 1px solid #EFEFEF; border-radius: 10px; outline: none; background: #ffffff; padding: 10px; color: #333333; font-size: 14px; font-weight: 400; line-height: 24px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6">
+                                            <input type="date"
+                                                style="width: 208px; height: 56px; border: 1px solid #EFEFEF; border-radius: 10px; outline: none; background: #ffffff; padding: 10px; color: #333333; font-size: 14px; font-weight: 400; line-height: 24px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="select"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">CRI</label>
+                                            <select name="select" id="select" class="mt-2"
+                                                style="width: 208px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 10px;">
+                                                <option value="">select</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="select"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">Status
+                                                type</label>
+                                            <select name="select" id="select" class="mt-2"
+                                                style="width: 208px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 10px;">
+                                                <option value="">select</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                        </div>
+                                        <label for="status"
+                                            style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;"
+                                            class="mt-3">Status</label>
+                                        <select name="status" id="status" class="mt-2"
+                                            style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 10px; margin-left: 8px;">
+                                            <option value="">Select</option>
+                                            <option value="">...</option>
+                                            <option value="">...</option>
+                                        </select>
+                                        <label for="invoce-n"
+                                            style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;"
+                                            class="mt-3">Invoce N</label>
+                                        <select name="invoce-n" id="invoce-n" class="mt-2"
+                                            style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 10px; margin-left: 8px;">
+                                            <option value="">123456789</option>
+                                            <option value="">...</option>
+                                            <option value="">...</option>
+                                        </select>
+                                        <div class="team-search"
+                                            style="position: relative; border-bottom: 1px solid #EFEFEF; border-radius: 1px; padding-bottom: 20px;">
+                                            <label for="text"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;"
+                                                class="mt-3">Team</label>
+                                            <input type="text" class="mt-2" placeholder="search"
+                                                style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #1A1818; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 40px; margin-left: -4px;">
+                                            <i style="position: absolute; top: 55px; left: 20px;"><img
+                                                    src="./assets/icon/search.svg" alt=""></i>
+                                            <i style="position: absolute; top: 55px; right: 20px;"><img
+                                                    src="./assets/icon/arrow-down-black.svg" alt=""></i>
+                                        </div>
+                                        <div class="client-info d-flex mt-3 justify-content-between">
+                                            <span
+                                                style="color: #38A8A8; font-size: 16px; font-weight: 600; line-height: 20px;">Client
+                                                info</span>
+                                            <i style="text-align: right;"><img src="./assets/icon/arrow-down-green.svg"
+                                                    alt=""></i>
+                                        </div>
+                                        <div class="client-name" style="position: relative; padding-bottom: 20px;">
+                                            <label for="text"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;"
+                                                class="mt-3">Name</label>
+                                            <input type="text" class="mt-2" placeholder="search" id="client-name"
+                                                onclick="border()"
+                                                style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #1A1818; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 40px; margin-left: -4px;">
+                                            <i style="position: absolute; top: 55px; left: 20px;"><img
+                                                    src="./assets/icon/search.svg" alt=""></i>
+                                            <i style="position: absolute; top: 55px; right: 20px; cursor: pointer;"><img
+                                                    src="./assets/icon/close-circle.svg" alt=""></i>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="select"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">Gender</label>
+                                            <select name="select" id="select" class="mt-2"
+                                                style="width: 208px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 10px;">
+                                                <option value="">select</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="select"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">Phone
+                                                number</label>
+                                            <select name="select" id="select" class="mt-2"
+                                                style="width: 208px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 10px;">
+                                                <option value="">+994 xx xxx xx xx</option>
+                                                <option value="">...</option>
+                                                <option value="">...</option>
+                                            </select>
+                                        </div>
+                                        <div class="email" style="position: relative;">
+                                            <label for="email"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;"
+                                                class="mt-3">Email</label>
+                                            <input type="email" class="mt-2" placeholder="search"
+                                                style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 40px; margin-left: -4px; opacity: 0.5;">
+                                            <i style="position: absolute; top: 55px; left: 20px;"><img
+                                                    src="./assets/icon/search.svg" alt=""></i>
+                                        </div>
+                                        <div class="select"
+                                            style="position: relative; border-bottom: 1px solid #EFEFEF; padding-bottom: 20px;">
+                                            <label for="select"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;"
+                                                class="mt-3">Select</label>
+                                            <input type="select" class="mt-2" placeholder="search"
+                                                style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #B4B4B4; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 40px; margin-left: -4px; opacity: 0.5;">
+                                            <i style="position: absolute; top: 55px; left: 20px;"><img
+                                                    src="./assets/icon/search.svg" alt=""></i>
+                                        </div>
+
+                                        <div class="product-info d-flex mt-3 justify-content-between">
+                                            <span
+                                                style="color: #38A8A8; font-size: 16px; font-weight: 600; line-height: 20px;">Product
+                                                info
+                                            </span>
+                                            <i style="text-align: right;"><img src="./assets/icon/arrow-down-green.svg"
+                                                    alt=""></i>
+                                        </div>
+                                        <div class="add-info d-flex justify-content-start mt-3">
+                                            <span
+                                                style="color: #1A1818; font-weight: 400; font-size: 12px; line-height: 16px;">Add
+                                                product</span>
+                                        </div>
+                                        <div class="add-product" style="position: relative; border-radius: 1px;">
+                                            <input type="text" class="mt-2" placeholder="search"
+                                                style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #1A1818; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 40px; margin-left: -4px;">
+                                            <i style="position: absolute; top: 23px; left: 20px;"><img
+                                                    src="./assets/icon/search.svg" alt=""></i>
+                                            <i style="position: absolute; top: 23px; right: 20px;"><img
+                                                    src="./assets/icon/arrow-down-black.svg" alt=""></i>
+                                        </div>
+                                        <div class="add-info d-flex justify-content-start mt-3">
+                                            <span
+                                                style="color: #1A1818; font-weight: 400; font-size: 12px; line-height: 16px;">Accessories</span>
+                                        </div>
+                                        <div class="accessories" style="position: relative; border-radius: 1px;">
+                                            <input type="text" class="mt-2" placeholder="search"
+                                                style="width: 442px; height: 56px; border: 1px solid #D6D6D6; border-radius: 10px; background-color: #ffffff; outline: none; color: #1A1818; font-size: 16px; font-weight: 400; line-height: 24px; padding-left: 40px; margin-left: -4px;">
+                                            <i style="position: absolute; top: 23px; left: 20px;"><img
+                                                    src="./assets/icon/search.svg" alt=""></i>
+                                            <i style="position: absolute; top: 23px; right: 20px;"><img
+                                                    src="./assets/icon/arrow-down-black.svg" alt=""></i>
+                                        </div>
+                                        <div class="product-props d-flex mt-3 justify-content-between">
+                                            <span
+                                                style="color: #38A8A8; font-size: 16px; font-weight: 600; line-height: 20px;">Product
+                                                properties
+                                            </span>
+                                            <i style="text-align: right;"><img src="./assets/icon/arrow-down-green.svg"
+                                                    alt=""></i>
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="ali-color-code"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">Aliminium
+                                                color code</label>
+                                            <input type="text" class="mt-2" placeholder="#123456789"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="fabric-color-code"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">Fabric
+                                                color code</label>
+                                            <input type="text" class="mt-2" placeholder="#123456789"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="width"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">min width
+                                                </label>
+                                            <input type="text" class="mt-2" placeholder="width"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="width"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">max width
+                                               </label>
+                                            <input type="text" class="mt-2" placeholder="width"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="height"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">min height
+                                                </label>
+                                            <input type="text" class="mt-2" placeholder="height"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="height"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">max height
+                                                </label>
+                                            <input type="text" class="mt-2" placeholder="height"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="length"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">min
+                                                length
+                                            </label>
+                                            <input type="text" class="mt-2" placeholder="length"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="length"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">max
+                                                length
+                                            </label>
+                                            <input type="text" class="mt-2" placeholder="length"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="weight"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">min weight
+                                            </label>
+                                            <input type="text" class="mt-2" placeholder="weight"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                        <div class="col-6 mt-3">
+                                            <label for="weight"
+                                                style="color: #1A1818; display: flex; justify-content: left; font-size: 12px; font-weight: 400; line-height: 16px;">max weight
+                                            </label>
+                                            <input type="text" class="mt-2" placeholder="weight"
+                                                style="border: 1px solid #D6D6D6;
+                                            border-radius: 10px; width: 208px; height: 56px; background: #ffffff; outline: none; padding: 10px; opacity: 0.5;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><img src="./assets/icon/filter-white.svg" alt=""></i>
+                            Filter
+                        </button>
                     </div>
                 </div>
             </div>
@@ -172,11 +448,14 @@
             <div class="container">
                 <div class="row custom-width mt-3">
                     <div class="custom-col-1 backg mt-2">
-                        <span class="latest">Latest projects</span>
-                        <a href="#">
-                            <span class="see">see all</span>
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
+                        <div class="mt-3">
+                            <span class="latest">Latest sales</span>
+                            <a href="#">
+                                <span class="see">see all</span>
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+                       
                         <div class="create-new">
                             <a href="#">
                                 <i class="fa-solid fa-plus"></i>
@@ -185,7 +464,7 @@
                                 </span>
                             </a>
                         </div>
-                        <div class="row mt-5">
+                        <div class="row mt-4">
                             <div class="col-6 d-flex justify-content-between">
                                 <span id="span-id">Loovroof project design</span>
                                 <div class="c"><span>C</span></div>
@@ -422,7 +701,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-4 mb-3">
                             <div class="col-6 d-flex justify-content-between">
                                 <span id="span-id">Loovroof project design</span>
                                 <div class="c"><span>C</span></div>

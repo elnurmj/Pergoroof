@@ -36,11 +36,11 @@ body{
     border-radius: 10px;
 }
 .custom-col-5{
-    width: 615px;
+    width: 815px;
     border-radius: 10px;
 }
 .custom-col-6{
-    width: 900px;
+    width: 700px;
     border-radius: 10px;
     margin-left: 30px;
 }
@@ -391,18 +391,119 @@ body{
 
 .filter-button{
     background: #38A8A8;
+    border-radius: 10px;
     width: 94px;
     height: 48px;
-    border-radius: 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
     border: none;
-    color: white;
+    margin-left: 16px;
+
+}
+
+.filter-button:hover{
+    .filter{
+        display: block;
+       
+    }
 }
 
 .filter-button:hover{
     background-color: #74B3B4;
     transition: 0.3s;
+    cursor: default;
 }
 
+a{
+    text-decoration: none;
+}
+
+
+.filter{
+    margin-top: -110px;
+    left: 1400px;
+    display: none;
+    height: 1800px;
+    width: 480px;
+    background-color: gray;
+    z-index: 1;
+    position: absolute;
+    box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    
+    
+    .filters{
+        justify-content: space-between;
+    }
+
+    .search{
+        input{
+            width: 432px;
+            height: 48px;
+            border-radius: 8px;
+            border: 1px solid #38A8A8;
+            box-shadow: 0px 0px 60px #d3d2d2;
+            padding-left: 50px;
+            opacity: 0.5;
+            outline: 1px solid gainsboro;
+            position: relative;
+        }
+
+        i{
+            position: absolute;
+            top:61px;
+            left: 40px;  
+            font-size: 18px;
+        }
+        
+    }
+     
+}
+
+.add-product{
+    ::placeholder{
+        color: #B4B4B4;
+    }
+}
+
+.accessories{
+    ::placeholder{
+        color: #B4B4B4;
+    }
+
+}
+
+.team-search{
+    ::placeholder{
+        color: #B4B4B4;
+    }
+}
+
+.client-name{
+    ::placeholder{
+        color: #B4B4B4;
+    }
+}
+
+.white-button{
+    width: 178px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    border: 1px solid #EFEFEF;
+    background-color: #ffffff;
+    border-radius: 10px;
+    letter-spacing: -0.01em;
+    color: #60AAAB;
+    margin-left: 30px;
+}
+
+.white-button:hover{
+    transition: 0.3s;
+    opacity: 0.5;
+}
 
 
 #span-id{
