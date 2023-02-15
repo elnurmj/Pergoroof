@@ -195,10 +195,14 @@ body {
   margin-left: 20px;
 }
 
+.icon-window img {
+  margin-left: 12px;
+  margin-top: 2px;
+}
+
 .icons {
   font-size: 25px;
   cursor: pointer;
-  padding-left: 100px;
   opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,6 +215,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: 1A1818 70, 68, 68;
+  position: relative;
 }
 
 .icons :hover {
@@ -224,22 +229,47 @@ body {
   padding-top: 10px;
 }
 
-.icons .count {
-  position: relative;
-}
-
-.icons .count-color {
+.icons .count-color1 {
   position: absolute;
-  top: -10px;
-  right: -25px;
+  top: 0px;
+  left: 60px;
   background-color: #FF7D7D;
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
 
+.icons .count-color1 span {
+  position: absolute;
+  top: 4px;
+  left: 6.5px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.icons .count-color2 {
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  background-color: #FF7D7D;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.icons .count-color2 span {
+  position: absolute;
+  top: 4px;
+  left: 6.5px;
+  font-size: 9px;
+  font-weight: 400;
+  color: #fff;
+}
+
 .user {
-  padding-left: 150px;
+  padding-right: 130px;
+  padding-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +277,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+}
+
+.user .img {
+  margin-left: 15px;
 }
 
 .user .img .username {
@@ -290,13 +324,31 @@ body {
 
 .user .arrow {
   color: #1A1818;
-  margin-left: 40px;
+  margin-left: 20px;
   width: 7px;
   cursor: pointer;
 }
 
 .user .arrow :hover {
   color: gray;
+}
+
+.category {
+  background: #F7F7F7;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #EFEFEF;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
 }
 
 .tm .team {

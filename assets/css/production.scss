@@ -153,27 +153,32 @@ body{
 
 .icon-user{
     display: flex;
+    justify-content: right;
 }
 
 .icon-window{
     height: 48px;
     width: 50px;
     border: 1px solid #D6D6D6;
-   border-radius: 8px;
-   outline: 1px solid gainsboro;
-   box-shadow: 0px 0px 10px #d3d2d2;
-   margin-left: 20px;
+    border-radius: 8px;
+    outline: 1px solid gainsboro;
+    box-shadow: 0px 0px 10px #d3d2d2;
+    margin-left: 20px;
+   img{
+    margin-left: 12px;
+    margin-top: 2px;
+   }
 }
 
 .icons{
     font-size: 25px;
     cursor: pointer;
-    padding-left: 100px;
     opacity: 0.8;
     display: flex;
     flex-direction: row;
     align-items: center;
     color: 1A1818(70, 68, 68);
+    position: relative;
     :hover{
         color: gray;
         transition: 0.3s;
@@ -183,28 +188,56 @@ body{
         padding-top: 10px;
     }
 
-    .count{
-        position: relative;
-    }
+    
 
-    .count-color{
+    .count-color1{
         position: absolute;
-        top: -10px;
-        right: -25px;
+        top: 0px;
+        left: 60px;
         background-color: #FF7D7D;
         width: 20px;
         height: 20px;
         border-radius: 50%;
+        span{
+            position: absolute;
+            top: 4px;
+            left: 6.5px;
+            font-size: 9px;
+            font-weight: 400;
+            color: #fff;
+        }
     }
+    
+
+    .count-color2{
+        position: absolute;
+        top: 0px;
+        right: -10px;
+        background-color: #FF7D7D;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        span{
+            position: absolute;
+            top: 4px;
+            left: 6.5px;
+            font-size: 9px;
+            font-weight: 400;
+            color: #fff;
+        }
+    }
+
+    
 }
 
 .user{
-    padding-left: 150px;
+    padding-right: 130px;
+    padding-left: 50px;
     display: flex;
     align-items: center;
     cursor: pointer;
     .img{
-        
+        margin-left: 15px;
         .username{
             width: 48px;
             height: 48px;
@@ -244,7 +277,7 @@ body{
 
     .arrow{
         color: #1A1818;
-        margin-left: 40px;
+        margin-left: 20px;
         width: 7px;
         cursor: pointer;
 
@@ -253,6 +286,18 @@ body{
             
         }
     }
+}
+
+.category{
+    background: #F7F7F7;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #EFEFEF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 
