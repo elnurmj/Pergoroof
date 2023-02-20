@@ -354,10 +354,35 @@ body {
   color: #B4B4B4;
 }
 
+.srvc .client {
+  color: #1A1818;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 32px;
+}
+
+.srvc .client-count {
+  color: #B4B4B4;
+  font-size: 18px;
+}
+
 .srvc h6 {
   color: #707070;
   font-size: 14px;
   font-weight: 400;
+}
+
+.srvc .home {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: #D6D6D6;
+}
+
+.srvc span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #707070;
 }
 
 .btn {
