@@ -62,7 +62,7 @@
                         </select>
 
 
-                        <input class="block" type="submit" value="Sign up">
+                        <input class="block" type="button" value="Sign up" onclick="openPopup()">
                         <span
                             style="color: #707070; font-size: 16px; font-weight: 400; line-height: 24px; margin-left: 75px; margin-top: 10px;">Already
                             have an account? <a class="signin" href="signin.html">Sign in</a></span>
@@ -80,10 +80,28 @@
                 plan"</h1>
         </div>
     </div>
+    <div class="popup" id="popup">
+        <i><img class="mail" src="./assets/img/mail.svg" alt=""></i>
+        <i><img class="close" src="./assets/icon/close.svg" onclick="closePopup()" alt=""></i>
+        <h1
+            style="color: #1A202C;font-weight: 600; font-size: 28px; line-height: 42px; text-align:center; margin-top: 165px;">
+            Verify your email</h1>
+        <p
+            style="color: #B4B4B4; font-weight: 500;font-size: 16px;line-height: 20%; text-align: center;letter-spacing: 0.2px; margin-top: 30px;">
+            We sent an email to <a href="#"
+                style="color: #1A1818; font-weight: 600; text-decoration: none;">ayselmalikova@pergoroof.com.</a>
+        </p>
+        <p
+            style="color: #B4B4B4; font-weight: 500;font-size: 16px; line-height: 150%; text-align: center;letter-spacing: 0.2px;">
+            Click confirmation link to verify your password.</p>
+    </div>
 
 
 
 
+
+
+    <script src="./assets/js/signup2.js"></script>
 </body>
 
 </html>

@@ -78,3 +78,7 @@ input[type=submit]:hover{
 .signup:hover{
     color: gray;
 }
+
+::placeholder{
+    opacity: 0.5;
+}

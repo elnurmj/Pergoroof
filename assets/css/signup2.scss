@@ -48,7 +48,7 @@ input[type=password]:focus{
     color: rgba(149, 219, 43, 0.733);
 }
 
-input[type=submit]{
+input[type=button]{
     width: 427px;
     height: 56px; 
     border-radius: 8px;
@@ -62,7 +62,7 @@ input[type=submit]{
     margin-bottom: 24px;
 }
 
-input[type=submit]:hover{
+input[type=button]:hover{
     background-color: #74B3B4;
 }
 
@@ -110,4 +110,43 @@ input[type=tel]{
 
 input[type=tel]:focus{
     border: 1px solid #38A8A8;
+}
+
+.popup{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 560px;
+    height: 315px;
+    transition: all 0.3s;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid #D6D6D6;
+
+    .close{
+        float: right;
+        opacity: 0.5;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .mail{
+        float: left;
+        position: absolute;
+        left: 34%;
+        top: 7%;
+    }
+
+    
+}
+
+.open-popup{
+    left: 35%;
+    top: 315px;
+    visibility: visible;
+}
+
+.row#blur.active{
+    filter: blur(20px);
 }

@@ -78,4 +78,20 @@ input[type=submit]:hover {
 .signup:hover {
   color: gray;
 }
+
+::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
 /*# sourceMappingURL=signin.css.map */
