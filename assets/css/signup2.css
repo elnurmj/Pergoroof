@@ -161,4 +161,17 @@ input[type=tel]:focus {
   -webkit-filter: blur(20px);
           filter: blur(20px);
 }
+
+@media (min-width: 2400px) {
+  form {
+    margin-left: 150px;
+  }
+  .open-popup {
+    left: 38%;
+    top: 470px;
+  }
+  .popup {
+    left: 38%;
+  }
+}
 /*# sourceMappingURL=signup2.css.map */

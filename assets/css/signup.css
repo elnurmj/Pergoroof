@@ -122,4 +122,13 @@ input[type=tel] {
 input[type=tel]:focus {
   border: 1px solid #38A8A8;
 }
+
+@media (min-width: 2400px) {
+  form {
+    margin-left: 150px;
+  }
+  .lst {
+    margin-left: -81px;
+  }
+}
 /*# sourceMappingURL=signup.css.map */

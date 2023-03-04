@@ -82,3 +82,9 @@ input[type=submit]:hover{
 ::placeholder{
     opacity: 0.5;
 }
+
+@media (min-width: 2400px){
+    form{
+        margin-left: 150px;
+    }
+}
