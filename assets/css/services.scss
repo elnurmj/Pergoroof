@@ -410,7 +410,7 @@ body{
     border-radius: 10px;
     letter-spacing: -0.01em;
     color: #60AAAB;
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 .white-button:hover{
@@ -431,17 +431,11 @@ body{
 
 }
 
-.filter-button:hover{
-    .filter{
-        display: block;
-       
-    }
-}
 
 .filter-button:hover{
     background-color: #74B3B4;
     transition: 0.3s;
-    cursor: default;
+    cursor: pointer;
 }
 
 a{
@@ -450,12 +444,12 @@ a{
 
 
 .filter{
-    margin-top: -110px;
+    margin-top: -140px;
     left: 1400px;
-    display: none;
     height: 1800px;
     width: 480px;
     background-color: gray;
+    visibility: hidden;
     z-index: 1;
     position: absolute;
     box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.05);
@@ -489,6 +483,11 @@ a{
     }
      
 }
+
+.open-filter{
+    visibility: visible;
+}
+
 
 .add-product{
     ::placeholder{
@@ -580,7 +579,11 @@ a{
     border-radius: 30px;
     align-items: center;
     text-align: center;
+    position: relative;
     span{
+        position: absolute;
+        top: 3px;
+        right: 13px;
         color: white;
         font-size: 12px;
         font-weight: 500;
@@ -594,7 +597,11 @@ a{
     border-radius: 30px;
     align-items: center;
     text-align: center;
+    position: relative;
     span{
+        position: absolute;
+        top: 3px;
+        right: 10px;
         color: white;
         font-size: 12px;
         font-weight: 500;
@@ -608,7 +615,11 @@ a{
     border-radius: 30px;
     align-items: center;
     text-align: center;
+    position: relative;
     span{
+        position: absolute;
+        top: 3px;
+        right: 13px;
         color: white;
         font-size: 12px;
         font-weight: 500;
@@ -728,4 +739,14 @@ a{
         margin-left: -400px;
         width: 2150px;
     }
+
+    .name-cust{
+        margin-right: 500px;
+   }
+
+
+   .filter{
+       left: 2040px;
+   }
+   
 }

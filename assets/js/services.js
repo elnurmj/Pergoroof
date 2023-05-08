@@ -13,6 +13,14 @@ function openNav() {
     document.getElementById("openbtn").style.display = "block";
   }
 
-  function closeFilter() {
-    document.getElementById("filter").style.display = "none";
-  }
+  
+
+let filter = document.getElementById("filter");
+
+function openFilter(){
+  filter.classList.add("open-filter");
+}
+
+function closeFilter(){
+  filter.classList.remove("open-filter");
+}

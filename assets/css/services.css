@@ -445,7 +445,7 @@ body {
   border-radius: 10px;
   letter-spacing: -0.01em;
   color: #60AAAB;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .white-button:hover {
@@ -466,15 +466,11 @@ body {
   margin-left: 16px;
 }
 
-.filter-button:hover .filter {
-  display: block;
-}
-
 .filter-button:hover {
   background-color: #74B3B4;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  cursor: default;
+  cursor: pointer;
 }
 
 a {
@@ -482,12 +478,12 @@ a {
 }
 
 .filter {
-  margin-top: -110px;
+  margin-top: -140px;
   left: 1400px;
-  display: none;
   height: 1800px;
   width: 480px;
   background-color: gray;
+  visibility: hidden;
   z-index: 1;
   position: absolute;
   -webkit-box-shadow: -4px 0px 24px rgba(0, 0, 0, 0.05);
@@ -519,6 +515,10 @@ a {
   top: 61px;
   left: 40px;
   font-size: 18px;
+}
+
+.open-filter {
+  visibility: visible;
 }
 
 .add-product ::-webkit-input-placeholder {
@@ -653,9 +653,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .requested span {
+  position: absolute;
+  top: 3px;
+  right: 13px;
   color: white;
   font-size: 12px;
   font-weight: 500;
@@ -670,9 +674,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .completed span {
+  position: absolute;
+  top: 3px;
+  right: 10px;
   color: white;
   font-size: 12px;
   font-weight: 500;
@@ -687,9 +695,13 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .scheduled span {
+  position: absolute;
+  top: 3px;
+  right: 13px;
   color: white;
   font-size: 12px;
   font-weight: 500;
@@ -795,6 +807,12 @@ a {
   .custom-width {
     margin-left: -400px;
     width: 2150px;
+  }
+  .name-cust {
+    margin-right: 500px;
+  }
+  .filter {
+    left: 2040px;
   }
 }
 /*# sourceMappingURL=services.css.map */
